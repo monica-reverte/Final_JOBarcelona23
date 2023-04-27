@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 export const Main = () => {
   const [data, setData] = useState([]);
 
+<<<<<<< HEAD
   // useEffect(() => {
   //   fetch("http://localhost:4000/")
   //     .then((response) => response.json())
@@ -11,6 +12,16 @@ export const Main = () => {
   //       setData(data.teams);
   //     });
   // }, []);
+=======
+  useEffect(() =>{
+    fetch("http://localhost:4000/")
+    .then(response => response.json())
+    .then(data => {
+
+      setData(data.teams);
+    })
+  }, []);
+>>>>>>> dev
 
   return (
     <div>
