@@ -2,17 +2,18 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.css";
 import { NavBar } from "./components/NavBar/NavBar";
 import Pages from "./router/Pages";
-
+import { Footer } from "./components/Footer/Footer";
 
 function App() {
-  return <div className="App">
-  <BrowserRouter>
+  return (
+    <div className="App">
+      <BrowserRouter>
         <NavBar />
         <Pages />
-         
-  </BrowserRouter>
-    
-    </div>;
+        <Footer />
+      </BrowserRouter>
+    </div>
+  );
 }
 
 export default App;
