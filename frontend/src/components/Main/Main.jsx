@@ -1,21 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 export const Main = () => {
 
-
-  const [teams, setTeams] = useState([]);
-
-  useEffect(()=> {
-    getTeams();
-  }, []);
-
-  const getTeams = async () => {
-      const api = await fetch("http://localhost:4000")
-      console.log(api)
-      const data = await api.json();
-      setTeams(data.recipes)
-      
-    }
+useEffect(() =>{
+  fetch("http://localhost:4000/")
+  .then(response => response.json())
+  .then(data => console.log(data))
+}, []);
     return (
       <div>
           
