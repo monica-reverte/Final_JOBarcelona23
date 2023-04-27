@@ -5,6 +5,7 @@ import Pages from "./router/Pages";
 import { Footer } from "./components/Footer/Footer";
 import { Main } from "./components/Main/Main";
 import { Filter } from "./components/Filter/Filter";
+import { Banner } from "./components/Banner/Banner";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <NavBar />
         <Filter />
         <Pages />
+        <Banner />
         <Main />
         <Footer />
       </BrowserRouter>
