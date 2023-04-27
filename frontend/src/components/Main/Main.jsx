@@ -13,13 +13,13 @@ export const Main = () => {
   }, []);
 
   return (
-    <div>
-      {data.map((item) => (
-        <div key={item.id}>
-          <p>{item.TeamName}</p>
+    <div className="box">
+      {data.map((item, index) => (
+        <div key={`${item.id}-${index}`} className="grid-item">
+          <p className="item-title">{item.TeamName}</p>
         </div>
       ))}
     </div>
-  )
-}
+  );
+      }  
 
