@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from 'react';
 
 export const Main = () => {
   const [data, setData] = useState([]);
 
-<<<<<<< HEAD
-  // useEffect(() => {
-  //   fetch("http://localhost:4000/")
-  //     .then((response) => response.json())
-  //     .then((data) => {
-  //       console.log(data.teams);
-  //       setData(data.teams);
-  //     });
-  // }, []);
-=======
   useEffect(() =>{
     fetch("http://localhost:4000/")
     .then(response => response.json())
@@ -21,7 +11,6 @@ export const Main = () => {
       setData(data.teams);
     })
   }, []);
->>>>>>> dev
 
   return (
     <div className="box">
@@ -32,9 +21,4 @@ export const Main = () => {
       ))}
     </div>
   );
-<<<<<<< HEAD
-};
-=======
       }  
-
->>>>>>> 286fecec819d26d35080ca37b559ac678c7c96d7
