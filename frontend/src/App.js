@@ -3,6 +3,7 @@ import "./App.css";
 import { NavBar } from "./components/NavBar/NavBar";
 import Pages from "./router/Pages";
 import { Footer } from "./components/Footer/Footer";
+import { Main } from "./components/Main/Main";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <BrowserRouter>
         <NavBar />
         <Pages />
+        <Main />
         <Footer />
       </BrowserRouter>
     </div>
