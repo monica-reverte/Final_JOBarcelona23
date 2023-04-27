@@ -1,0 +1,15 @@
+header {
+    background-color: #2A3543;
+    color: white;
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+
+
+
