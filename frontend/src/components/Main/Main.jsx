@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 
 export const Main = () => {
+<<<<<<< HEAD
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
@@ -22,6 +23,17 @@ export const Main = () => {
         {teams.map((team) => {
           return <div key={team.id}></div>;
         })}
+=======
+
+useEffect(() =>{
+  fetch("http://localhost:4000/")
+  .then(response => response.json())
+  .then(data => console.log(data))
+}, []);
+    return (
+      <div>
+          
+>>>>>>> dev
       </div>
     </div>
   );
