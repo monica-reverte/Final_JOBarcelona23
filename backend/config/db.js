@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB_URL = "mongodb://localhost:27017/hackathon";
+const DB_URL = "mongodb://10.227.11.254:27017/hackathon";
 const connect = async () => {
   return await mongoose
     .connect(DB_URL)
