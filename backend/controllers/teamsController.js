@@ -8,12 +8,26 @@ const getAllTeams = async (req, res) => {
   } catch (error) {
     res.status(504).send({ message: error.message });
   }
-
-  // res.status(200).send({
-  //   data: "We got all Teams"
-  // });
 };
 
+const getTeamById = async (req, res) => {
+  const { teamID } = req.params;
+  try {
+    const team = await model.Team.findById(teamID);
+    res.status(200).send(team);
+  } catch (error) {
+    res.status(504).send({ message: error.message });
+  }
+};
+
+const getPlayer = async () => {
+  try {
+  } catch (error) {
+    res.status(504).send({ message: error.message });
+  }
+};
 module.exports = {
   getAllTeams: getAllTeams,
+  getTeamById: getTeamById,
+  getPlayer: getPlayer
 };

@@ -161,6 +161,8 @@ const PlayerSchema = new mongoose.Schema({
   Recov: {
     type: Number,
   },
+
+  
 });
 
 module.exports = mongoose.model("Player", PlayerSchema);
