@@ -1,6 +1,36 @@
 footer {
     background-color: #2A3543;
     color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.rrss {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem;
+}
+
+.rss-list {
+    display: flex;
+    gap: 1rem;
+}
+
+.privacy {
+    display: flex;
+    justify-content:space-between;
+    margin: 2rem
+}
+
+.privacy > ul  {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 0.8rem;
+}
 
 
+p {
+    font-size: 1.3rem;
+    font-weight: 600;
 }
