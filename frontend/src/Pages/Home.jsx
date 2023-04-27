@@ -1,9 +1,10 @@
 import React from 'react'
-import { NavBar } from '../components/NavBar/NavBar'
+import { Banner } from '../components/Banner/Banner'
 
 export const Home = () => {
   return (
     <div>
+      <Banner />
     
     </div>
   )
