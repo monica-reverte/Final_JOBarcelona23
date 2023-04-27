@@ -1,164 +1,52 @@
 const mongoose = require("mongoose");
 
 const TeamSchema = new mongoose.Schema({
-  Player_id: {
-    type: String,
-  },
-  Player: {
-    type: String,
-  },
   Squad_id: {
     type: String,
   },
-  Nation: {
+  TeamName: {
     type: String,
   },
-  Pos: {
+  League: {
     type: String,
   },
-  Age: {
+  GamesPlayedLocal: {
     type: Number,
   },
-
-  Born: {
+  GamesPlayedVisitor: {
     type: Number,
   },
-  MP: {
+  GamesPlayedTotal: {
     type: Number,
   },
-  Starts: {
+  GamesWLocal: {
     type: Number,
   },
-  Min: {
+  GamesWVisitor: {
     type: Number,
   },
-  Gls: {
+  GamesTied: {
     type: Number,
   },
-  Ast: {
+  GamesLostLocal: {
     type: Number,
   },
-  PK: {
+  GamesLostVisitor: {
     type: Number,
   },
-  PKatt: {
+  GamesWLocalAverage: {
     type: Number,
   },
-  CrdY: {
+  GamesWVisitorAverage: {
     type: Number,
   },
-  CrdR: {
+  GamesTiedAverage: {
     type: Number,
   },
-  Progression_PrgC: {
+  GamesLostLocalAverage: {
     type: Number,
   },
-  Progression_PrgP: {
-    type: Number,
-  },
-  Progression_PrgR: {
-    type: Number,
-  },
-  Sh: {
-    type: Number,
-  },
-  SoT: {
-    type: Number,
-  },
-  Dist: {
-    type: Number,
-  },
-  FK: {
-    type: Number,
-  },
-  Passes_Cmp: {
-    type: Number,
-  },
-  Passes_Att: {
-    type: Number,
-  },
-  Passes_TotDist: {
-    type: Number,
-  },
-  Passes_PrgDist: {
-    type: Number,
-  },
-  KP: {
-    type: Number,
-  },
-  PPA: {
-    type: Number,
-  },
-  Tkl: {
-    type: Number,
-  },
-  Challenges_Tkl: {
-    type: Number,
-  },
-  Challenges_Lost: {
-    type: Number,
-  },
-  Blocks: {
-    type: Number,
-  },
-  Err: {
-    type: Number,
-  },
-  Touches: {
-    type: Number,
-  },
-  Touches_DefPen: {
-    type: Number,
-  },
-  Touches_AttPen: {
-    type: Number,
-  },
-  TakeOnsSucc: {
-    type: Number,
-  },
-  TakeOnsTkld: {
-    type: Number,
-  },
-  Carries_Carries: {
-    type: Number,
-  },
-  Carries_TotDist: {
-    type: Number,
-  },
-  Carries_PrgDist: {
-    type: Number,
-  },
-  Carries_Dis: {
-    type: Number,
-  },
-  Receiving_Rec: {
-    type: Number,
-  },
-  Subs: {
-    type: Number,
-  },
-  unSub: {
-    type: Number,
-  },
-  CrdY: {
-    type: Number,
-  },
-  Fls: {
-    type: Number,
-  },
-  Fld: {
-    type: Number,
-  },
-  Off: {
-    type: Number,
-  },
-  PKcon: {
-    type: Number,
-  },
-  OG: {
-    type: Number,
-  },
-  Recov: {
+  GamesLostVisitorAverage: {
     type: Number,
   },
 });

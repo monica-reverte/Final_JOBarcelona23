@@ -5,3 +5,4 @@ module.exports = {
   Team: TeamModel,
   Player: PlayerModel
 };
+
