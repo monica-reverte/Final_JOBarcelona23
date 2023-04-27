@@ -6,11 +6,10 @@ import Pages from "./router/Pages";
 
 function App() {
   return <div className="App">
-  <BrowserRouter>
+    <BrowserRouter>
         <NavBar />
         <Pages />
-         
-  </BrowserRouter>
+    </BrowserRouter>
     
     </div>;
 }
