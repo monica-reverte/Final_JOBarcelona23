@@ -1,28 +1,27 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export const Main = () => {
   const [teams, setTeams] = useState([]);
 
-  useEffect(() => {
-    getTeams();
-  }, []);
-
-  const getTeams = async () => {
-    const api = await fetch("http://localhost:4000")
-      .then((response) => response.json())
-      .then((data) => console.log(data));
-    const data = await api.json();
-    // setTeams(data.recipes);
+  const getTeam = async () => {
+    const data = await fetch("http://localhost:4000/");
+    const teams = await data.json();
+    setTeams(teams);
   };
+
+  useEffect(() => {
+    getTeam();
+  }, []);
 
   return (
     <div>
-      <h3>TEAMS</h3>
-      <div>
-        {teams.map((team) => {
-          return <div key={team.id}></div>;
-        })}
-      </div>
+      {teams.map((item) => {
+        return (
+          <div key={item.id}>
+            <p>{item.squad}</p>
+          </div>
+        );
+      })}
     </div>
   );
 };
