@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Header.css";
+import "./NavBar.css";
 import { BsSearch } from "react-icons/bs";
 import { useNavigate } from "react-router-dom";
 
@@ -16,13 +16,13 @@ export const NavBar = () => {
     <header>
       <h1>TeamTracker</h1>
       <form onSubmit={handleSubmit}>
-        <BsSearch />
         <input
           onChange={(e) => setInput(e.target.value)}
           type="text"
           value={input}
           placeholder="Search..."
         />
+        <BsSearch className="search-icon" />
       </form>
     </header>
   );
