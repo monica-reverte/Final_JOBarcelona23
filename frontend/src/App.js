@@ -4,6 +4,7 @@ import { NavBar } from "./components/NavBar/NavBar";
 import Pages from "./router/Pages";
 import { Footer } from "./components/Footer/Footer";
 import { Filter } from "./components/Filter/Filter";
+import { Main } from "./components/Main/Main";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <NavBar />
         <Filter />
         <Pages />
+        
         <Footer />
       </BrowserRouter>
     </div>
