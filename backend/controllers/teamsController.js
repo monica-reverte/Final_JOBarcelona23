@@ -20,14 +20,18 @@ const getTeamById = async (req, res) => {
   }
 };
 
-const getPlayer = async () => {
+const getPlayersFromSquad = async (req, res) => {
+  const squadId = req.params.squadId;
   try {
+    const players = await model.Player.find({ squadId: squadId });
+    res.status(200).send(players);
   } catch (error) {
     res.status(504).send({ message: error.message });
   }
 };
+
 module.exports = {
   getAllTeams: getAllTeams,
   getTeamById: getTeamById,
-  getPlayer: getPlayer
+  getPlayersFromSquad: getPlayersFromSquad,
 };
