@@ -24,12 +24,17 @@ export const Main = () => {
 >>>>>>> dev
 
   return (
-    <div>
-      {data.map((item) => (
-        <div key={item.id}>
-          <p>{item.TeamName}</p>
+    <div className="box">
+      {data.map((item, index) => (
+        <div key={`${item.id}-${index}`} className="grid-item">
+          <p className="item-title">{item.TeamName}</p>
         </div>
       ))}
     </div>
   );
+<<<<<<< HEAD
 };
+=======
+      }  
+
+>>>>>>> 286fecec819d26d35080ca37b559ac678c7c96d7
