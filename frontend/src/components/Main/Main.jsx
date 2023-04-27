@@ -18,16 +18,7 @@ export const Main = () => {
     }
     return (
       <div>
-          <h3>TEAMS</h3>
-            <div>
-              {teams.map((team) => {
-                return(
-                  <div key={team.id}>
-                    
-                  </div>
-                );
-              })}
-            </div>
+          
       </div>
     )
   }
