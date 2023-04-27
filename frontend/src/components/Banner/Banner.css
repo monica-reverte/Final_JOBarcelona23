@@ -1,7 +1,24 @@
 .banner{
     background-color: #4a535f;
+
+    color:white;
+    position: relative;
+
+    /* border-radius:2rem; */
+    
+}
+
+img {
+    width: 100%;
+}
+
+.text{
+    background-color: hsla(214, 12%, 33%, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
     margin: 4rem;
     padding: 3rem;
-    color:white;
-    border-radius:2rem;
+    font-size: 0.8rem;
+
 }
