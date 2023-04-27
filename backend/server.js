@@ -3,6 +3,7 @@ const app = express();
 const cors = require("cors");
 
 const teamsRoutes = require("./routes/teamsRoutes");
+const playersRoutes = require("./routes/players");
 const PORT = 4000;
 
 //!CONNECTION DB
@@ -18,8 +19,7 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 app.use("/", teamsRoutes);
-// app.use("/team", teamRoute);
-// app.use("/players", playersRoutes);
+app.use("/players", playersRoutes);
 app.listen(PORT, () => {
   console.log(`App express is running in port: ${PORT}`);
 });
