@@ -2,6 +2,7 @@ import React from "react";
 import { FaInstagram } from "react-icons/fa";
 import { FaFacebook } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
+import "./Footer.css";
 
 export const Footer = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer = () => {
         <p>TeamTracker</p>
       </div>
 
-      <ol>
+      <ul>
         <li>
           <FaInstagram />
         </li>
@@ -20,7 +21,7 @@ export const Footer = () => {
         <li>
           <FaTwitter />
         </li>
-      </ol>
+      </ul>
     </footer>
   );
 };
