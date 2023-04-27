@@ -7,7 +7,7 @@ export const Main = () => {
     fetch("http://localhost:4000/")
     .then(response => response.json())
     .then(data => {
-      console.log(data.teams);
+
       setData(data.teams);
     })
   }, []);

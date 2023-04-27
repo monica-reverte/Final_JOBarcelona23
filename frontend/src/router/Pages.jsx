@@ -3,6 +3,7 @@ import { Home } from "../Pages/Home";
 import { Players } from "../Pages/Players"; 
 import { Team } from "../Pages/Team";
 import { useLocation } from "react-router-dom";
+import { Goals } from "../Pages/Goals";
 
 
 function Pages() {
@@ -13,6 +14,7 @@ function Pages() {
         
         <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />
+            <Route path="/goals" element={<Goals />} />
             <Route path="/player/:name" element={<Players />} />
             <Route path="/team/:name" element={<Team />} />
         </Routes>
